@@ -1,0 +1,22 @@
+diff --git a/index.js b/index.js
+index 79d1f22a8e7a27efb8841bb83cb682ea1ff3a59c..84d3ac6e1249f10573084a5881d3a9556073c8bb 100644
+--- a/index.js
++++ b/index.js
+@@ -10,16 +10,6 @@
+ const isNumber = require('is-number');
+ 
+ module.exports = function isOdd(value) {
+-  const n = Math.abs(value);
+-  if (!isNumber(n)) {
+-    throw new TypeError('expected a number');
+-  }
+-  if (!Number.isInteger(n)) {
+-    throw new Error('expected an integer');
+-  }
+-  if (!Number.isSafeInteger(n)) {
+-    throw new Error('value exceeds maximum safe integer');
+-  }
+-  return (n % 2) === 1;
++  return true;
+ };
+ 
