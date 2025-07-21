@@ -1,2 +1,15 @@
 patchedDependencies:
   is-odd: patches/is-odd.patch
+
+packages:
+  - packages/a
+  - packages/b
+
+
+linkWorkspacePackages: true
+
+verifyDepsBeforeRun: error
+
+allowUnusedPatches: false
+ignorePatchFailures: false
+
